@@ -12,7 +12,7 @@ export const FooterCard = ({ title, body, type }) => {
     >
       <Stack direction="column">
         <Typography mb={1}>{title}</Typography>
-        <Typography variant="h2">{body}</Typography>
+        <Typography variant="h3">{body}</Typography>
       </Stack>
     </Box>
   );
