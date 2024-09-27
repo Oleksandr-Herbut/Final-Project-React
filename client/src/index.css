@@ -1,9 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  color: #282828;
 }
+
+a {
+  text-decoration: none;
+  color: #282828;
+}
+
+.navbar__link:hover {
+  color: #0d50ff;
+}
+
+.container {
+  width: 1360px;
+  margin: 0 auto;
+}
+/* .cats_dogs {
+  width: 53vw;
+} */
+.firstOrderForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 516px;
+}
+
+.firstOrderForm input {
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #ffffff;
+  padding: 18px 32px 16px 32px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.firstOrderForm button {
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  height: 58px;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+
+.firstOrderForm button:hover {
+  transform: scale(1.01);
+}
+
+.firstOrderForm input::placeholder {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.cartForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.cartForm input {
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  font-size: 20px;
+  padding: 18px 32px 16px 32px;
+}
+
+.cartForm input::placeholder {
+  color: #8b8b8b;
+  font-size: 20px;
+}
+
+.cartForm button {
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  height: 58px;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: transform 0.4s;
+  background-color: #0d50ff;
+  color: #ffffff;
+}
+
+.cartForm button:hover {
+  transform: scale(1.01);
+}
+
+.shortenText {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 252px;
+  white-space: nowrap;
+}
+
+.description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.select__container {
+  position: relative;
+  width: 210px;
+  height: 36px;
+}
+
+.select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  line-height: 1.25rem;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  background-color: #ffffff;
+  cursor: pointer;
+  position: relative;
+}
+
+.custom-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.custom-option {
+  padding: 4px 16px;
+  cursor: pointer;
+  color: #8b8b8b;
+}
+
+.custom-option:hover,
+.custom-option.selected {
+  background-color: #f0f0f0;
+  color: #282828;
+}
+.valueControl {
+  position: absolute;
+  top: -16px;
+  width: 57px;
+  height: 57px;
+  border-radius: 8px;
+  border: 1px solid #dddddd;
+  border-top: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #8b8b8b;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.valueControl:hover {
+  background-color: #f5f5f5;
+}
+
+/* @media screen and (max-width: 1420px) {
+  .container {
+    max-width: 1200px;
+  }
+  .petsBanner {
+    width: 48vw;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .container {
+    max-width: 940px;
+  }
+  .petsBanner {
+    width: 38vw;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .container {
+    max-width: 720px;
+  }
+  .petsBanner {
+    width: 38vw;
+  }
+  .navbar__link {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .container {
+    max-width: 520px;
+  }
+  .petsBanner {
+    display: none;
+  }
+  .firstOrderForm {
+    padding-right: 0;
+    margin: 0 auto;
+  }
+  .description {
+    max-width: 420px;
+  }
+  .valueControl {
+    height: 42px;
+    width: 42px;
+  }
+  .shortenText {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .container {
+    max-width: 460px;
+  }
+  .firstOrderForm {
+    padding: 32px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  .description {
+    max-width: 320px;
+  }
+} */
