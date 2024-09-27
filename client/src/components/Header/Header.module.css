@@ -1,4 +1,6 @@
 .navLink {
   color: #282828;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
 }

@@ -1,9 +1,11 @@
-import { Container, Toolbar, Stack, Typography, Badge } from "@mui/material";
+import { Container, Toolbar, Stack, Badge, Box } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
+import { useCart } from "../../store/cartContext";
 export const Header = () => {
+  const { cartItems } = useCart();
   return (
-    <Container>
+    <div className="container">
       <Toolbar>
         <Stack
           mb={3}
@@ -42,7 +44,7 @@ export const Header = () => {
 
           <Stack direction="row" gap={4}>
             <NavLink className={styles.navLink} to="/">
-              <Typography>Main page</Typography>
+              Main page
             </NavLink>
             <NavLink className={styles.navLink} to="/categories">
               Categories
@@ -57,7 +59,7 @@ export const Header = () => {
 
           <NavLink to="/cart">
             <Badge
-              badgeContent={1}
+              badgeContent={cartItems.length}
               color="primary"
               overlap="circular"
               anchorOrigin={{
@@ -81,6 +83,7 @@ export const Header = () => {
           </NavLink>
         </Stack>
       </Toolbar>
-    </Container>
+      <Box sx={{ borderBottom: "1px solid #DDDDDD", width: "100%" }} />
+    </div>
   );
 };
