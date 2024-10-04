@@ -1,0 +1,38 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 516px;
+}
+
+.textInput {
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #ffffff;
+  padding: 18px 32px 16px 32px;
+  border-radius: 8px;
+  font-size: 20px;
+  height: 58px;
+}
+button {
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  height: 58px;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+
+button:hover {
+  transform: scale(1.02);
+}
+input::placeholder {
+  color: #ffffff;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: #282828;
+}
