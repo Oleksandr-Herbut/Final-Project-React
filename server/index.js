@@ -17,7 +17,7 @@ app.use(express.static('public'));
 
 // Настраиваем CORS с переменной окружения CLIENT_ORIGIN
 app.use(cors({
-  origin: process.env.CLIENT_ORIGIN || 'https://petshop-react-oleksandr.vercel.app/'
+  origin: process.env.CLIENT_ORIGIN || 'https://petshop-react-oleksandr.vercel.app'
 }));
 
 app.use(express.urlencoded({ extended: true })); // Исправляем express.urlencoded()
